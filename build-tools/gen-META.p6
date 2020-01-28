@@ -14,9 +14,9 @@ my $m = META6.new(
     tags           => <IP IPv4 IPv6>,
     authors        => ['Vadim Belman <vrurg@cpan.org>'],
     auth           => 'github:vrurg',
-    source-url     => 'git://github.com/vrurg/perl6-IP-Addr.git',
+    source-url     => 'git://github.com/vrurg/raku-IP-Addr.git',
     support        => META6::Support.new(
-        source          => 'https://github.com/vrurg/perl6-IP-Addr.git',
+        source          => 'https://github.com/vrurg/raku-IP-Addr.git',
     ),
     provides => {
         'IP::Addr'          => 'lib/IP/Addr.pm6',
@@ -30,8 +30,3 @@ my $m = META6.new(
 );
 
 print $m.to-json;
-
-#my $m = META6.new(file => './META6.json');
-#$m<version description> = v0.0.2, 'Work with Perl 6 META files even better';
-#spurt('./META6.json', $m.to-json);
-

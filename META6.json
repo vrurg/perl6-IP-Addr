@@ -1,45 +1,43 @@
 {
   "support": {
-    "source": "https://github.com/vrurg/perl6-IP-Addr.git"
+    "source": "https://github.com/vrurg/raku-IP-Addr.git"
   },
-  "tags": [
-    "IP",
-    "IPv4",
-    "IPv6"
-  ],
   "license": "Artistic-2.0",
+  "version": "0.0.3",
+  "depends": [
+  ],
   "authors": [
     "Vadim Belman <vrurg@cpan.org>"
   ],
-  "meta-version": "0",
-  "resources": [
-    
-  ],
+  "perl": "6.*",
+  "production": true,
+  "provides": {
+    "IP::Addr::Handler": "lib/IP/Addr/Handler.pm6",
+    "IP::Addr": "lib/IP/Addr.pm6",
+    "IP::Addr::v4": "lib/IP/Addr/v4.pm6",
+    "IP::Addr::v6": "lib/IP/Addr/v6.pm6",
+    "IP::Addr::Common": "lib/IP/Addr/Common.pm6"
+  },
+  "auth": "github:vrurg",
   "build-depends": [
     "META6",
     "p6doc",
     "Pod::To::Markdown"
   ],
-  "provides": {
-    "IP::Addr::v6": "lib/IP/Addr/v6.pm6",
-    "IP::Addr::Common": "lib/IP/Addr/Common.pm6",
-    "IP::Addr": "lib/IP/Addr.pm6",
-    "IP::Addr::v4": "lib/IP/Addr/v4.pm6",
-    "IP::Addr::Handler": "lib/IP/Addr/Handler.pm6"
-  },
+  "source-url": "git://github.com/vrurg/raku-IP-Addr.git",
   "name": "IP::Addr",
-  "auth": "github:vrurg",
-  "depends": [
-    
+  "resources": [
   ],
-  "source-url": "git://github.com/vrurg/perl6-IP-Addr.git",
-  "production": true,
   "description": "IPv4/IPv6 manipulation",
+  "tags": [
+    "IP",
+    "IPv4",
+    "IPv6"
+  ],
   "test-depends": [
     "Test",
     "Test::META",
     "Test::When"
   ],
-  "version": "0.0.1",
-  "perl": "6.*"
+  "meta-version": "0"
 }

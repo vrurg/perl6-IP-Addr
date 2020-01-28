@@ -55,7 +55,7 @@ I<ip>
 Simple IP address. It has prefix length of 32 bits.
 =end item
 
-=begin item 
+=begin item
 I<cidr>
 
 CIDR form is an IP address with I<prefix> defined.
@@ -82,7 +82,7 @@ CIDR and ranges are I<ranged forms> contrary to a single IP form.
 =head3 N-tets
 
 As it is known IP addresses are represented by groups of integers called I<octets> for IPv4 and I<hextets> for IPv6
-(there are variantions but I chose these). I<N-tets> is used as a general term for both of them.
+(there are variations but I chose these two). I<N-tets> is used as a general term for both of them.
 
 =head1 METHODS
 
@@ -287,7 +287,7 @@ is officially no such thing for them.
 Returns string representation of current IP object wildcard. Doesn't make much sense for IPv6 addresses because there
 is officially no such thing for them.
 
-=head2 C<size> 
+=head2 C<size>
 
 Returns number of IP addresses contained in the current C<IP::Addr> object. For example:
 
@@ -452,7 +452,7 @@ other one could be a string representation of an address.
 
 =head2 C<prefix/postfix ++> and C<prefix/postfix -->
 
-Standard Perl6 operatios working by calling C<succ>/C<pred> methods on C<IP::Addr> object.
+Standard Raku operatios working by calling C<succ>/C<pred> methods on C<IP::Addr> object.
 
 =head2 C<infix + ( $addr, $int )>
 
@@ -510,7 +510,7 @@ I<True> if C<$addr1> is contained by C<$addr2>.
 
 use v6.c;
 
-unit class IP::Addr:ver<0.0.1>;
+unit class IP::Addr:ver<0.0.3>;
 
 use IP::Addr::Handler;
 use IP::Addr::v4;
